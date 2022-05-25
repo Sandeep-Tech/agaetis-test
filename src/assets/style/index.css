@@ -1,0 +1,46 @@
+/* font imports */
+@font-face {
+    font-family: 'nimbus_roman';
+    src: url('NimbusRomNo9L-Reg-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* reset */
+* { margin: 0; padding: 0; }
+ul, li { list-style: none; }
+
+/* general rules */
+body { font-family: 'nimbus_roman'; background: #fff; }
+.container { width: 1240px; }
+
+
+/* sticky footer */
+html, body { height: 100%; }
+body { display: flex; flex-direction: column; align-items: center; }
+footer { margin-top: auto; }
+
+
+/* header */
+header { padding: 20px; }
+header .top-section { display: flex; justify-content: space-between; align-items:center; padding: 0 0 20px 0;  border-bottom: .5px solid #e4e4e4; }
+header .subscribe { font-size: 16px; color:#878e94; font-family: Helvetica, sans-serif; font-weight: 600; cursor: pointer; }
+header .logo { font-size: 34px; font-weight: bold; user-select: none; }
+header .rt-side { display: flex; align-items: center; }
+header .search { width: 20px; height: 30px; background: url(../pictures/search-icon.svg) center no-repeat; margin: 0 20px 0 0; cursor: pointer; }
+header .sign-up-button { font-size: 16px; line-height: 28px; border: 1px solid #6f777f; color: #6f777f; border-radius: 5px; padding: 0 5px; background: #fff; cursor: pointer; }
+
+header .nav-list { display: flex; justify-content: space-between; padding: 10px 0 0 0 ; }
+header .nav-list li { cursor: pointer; font-family: Helvetica, sans-serif; font-size: 20px; color: #878e94; }
+
+
+/* section 1 */
+.blog-post-cards > div { border: 1px solid red; }
+.blog-post-cards { display: flex; flex-wrap: wrap; }
+.blog-post-cards .long { width: 100%; flex: 2 0 auto; }
+.blog-post-cards .short { flex: 0 1 50%; }
+
+
+/* debug styles */
+.border-red {border:1px solid red;}

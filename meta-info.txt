@@ -1,0 +1,1 @@
+png reference image at scale 305% zoom is the roughly exact scale to measure dimensions with respect to.
