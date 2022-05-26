@@ -66,8 +66,11 @@ footer { margin-top: auto; }
 
 /* header */
 header { padding: 20px 0; }
+
 header .top-section { display: flex; justify-content: space-between; align-items:center; padding: 0 0 20px 0;  border-bottom: .5px solid #e4e4e4; }
-header .subscribe a { font-size: 16px; color:#878e94; font-family: Helvetica, sans-serif; font-weight: 600; cursor: pointer; }
+header .top-section .lt-side { display: flex; }
+header .top-section .drop-down { display: none; margin:0 0 0 10px; width:32px; height: 32px; background: url(../pictures/drop-down-arrow.png) center no-repeat; }
+header .top-section .subscribe a { font-size: 16px; color:#878e94; font-family: Helvetica, sans-serif; font-weight: 600; cursor: pointer; }
 header .logo { font-size: 34px; font-weight: bold; user-select: none; }
 header .rt-side { display: flex; align-items: center; }
 header .search { width: 20px; height: 30px; background: url(../pictures/search-icon.svg) center no-repeat; margin: 0 20px 0 0; cursor: pointer; }
@@ -76,6 +79,10 @@ header .sign-up-button a { font-size: 16px; line-height: 28px; color: #6f777f; b
 
 header .nav-list { display: flex; justify-content: space-between; padding: 10px 0 0 0 ; }
 header .nav-list li { cursor: pointer; font-family: Helvetica, sans-serif; font-size: 20px; color: #878e94; }
+
+header .nav-list.drop-down { display: block; padding: 10px 0 0 0 ; }
+header .nav-list.drop-down li { font-family: Helvetica, sans-serif; font-size: 20px; color: #878e94; text-align: center; cursor: pointer; border-bottom: .5px solid #e4e4e4; padding: 0 0 20px 0; margin-bottom: 20px; }
+header .nav-list.drop-down li:first-child { padding-top: 10px; }
 
 
 /* section 1 */
@@ -153,10 +160,11 @@ header .nav-list li { cursor: pointer; font-family: Helvetica, sans-serif; font-
     .container { padding: 0 20px; }
 
     /* header */
-    .header .top-section .subscribe a { font-size: 12px; }
+    .header .top-section .subscribe { display: none; }
+    .header .top-section .drop-down { display: block; }
     .header .top-section .search { display: none; }
     .header .top-section .sign-up-button a { font-size: 12px; }
-    .header nav {display: none;}
+    .header .nav-list { display: none; }
 
     /* section 1 */
     .blog-post-cards { display: flex; flex-direction: column; }

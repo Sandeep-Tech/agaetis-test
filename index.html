@@ -14,7 +14,12 @@
         <!-- header -->
         <header class="header">
           <div class="top-section">
-            <div class="subscribe"><a href="javascript:void(0)">Subscribe</a></div>
+            <div class="lt-side">
+              <div class="subscribe">
+                <a href="javascript:void(0)">Subscribe</a>
+              </div>
+              <div class="drop-down" onclick="toggleDropDown()"></div>
+            </div>
             <div class="logo">Large</div>
             <div class="rt-side">
               <div class="search"></div>
@@ -24,7 +29,7 @@
             </div>
           </div>
           <nav>
-            <ul class="nav-list">
+            <ul class="nav-list" id="header-nav-list" >
               <li><a href="javascript:void(0)">World</a></li>
               <li><a href="javascript:void(0)">U.S.</a></li>
               <li><a href="javascript:void(0)">Technology</a></li>
@@ -315,5 +320,11 @@
         </div>
       </div>
     </footer>
+    <script>
+      function toggleDropDown() {
+        const dropDown = document.getElementById("header-nav-list");
+        dropDown.classList.toggle("drop-down");
+      }
+    </script>
   </body>
 </html>
