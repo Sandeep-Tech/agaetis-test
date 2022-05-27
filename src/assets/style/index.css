@@ -67,7 +67,7 @@ footer { margin-top: auto; }
 /* header */
 header { padding: 20px 0; }
 
-header .top-section { display: flex; justify-content: space-between; align-items:center; padding: 0 0 20px 0;  border-bottom: .5px solid #e4e4e4; }
+header .top-section { display: flex; justify-content: space-between; align-items: center; padding: 0 0 20px 0;  border-bottom: .5px solid #e4e4e4; }
 header .top-section .lt-side { display: flex; }
 header .top-section .drop-down { display: none; margin:0 0 0 10px; width:32px; height: 32px; background: url(../pictures/drop-down-arrow.png) center no-repeat; }
 header .top-section .subscribe a { font-size: 16px; color:#878e94; font-family: Helvetica, sans-serif; font-weight: 600; cursor: pointer; }
@@ -104,8 +104,8 @@ header .nav-list.drop-down li:first-child { padding-top: 10px; }
 .blog-post-cards .short .date { font-size: 16px; font-family: Helvetica, sans-serif; color: #878e94; margin: 0 0 10px 0; }
 .blog-post-cards .short .summary { font-size: 16px; font-family: Helvetica, sans-serif; margin: 0 0 10px 0; }
 .blog-post-cards .short .cont-reading a { font-size: 16px; font-family: Helvetica, sans-serif; color: #047cfc; }
-.blog-post-cards .short .img-wrap { width: 100%; max-width: 225px; background: #55595c; }
-.blog-post-cards .short .img-wrap img { width: 100%; height: auto; color: #fff; font-family: Helvetica, sans-serif; }
+.blog-post-cards .short .img-wrap { width: 100%; max-width: 225px; background: #55595c; position: relative; }
+.blog-post-cards .short .img-wrap .thumbnail { color: #fff; font-size: 16px; font-family: Helvetica, sans-serif; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); user-select: none; }
 
 
 
@@ -180,9 +180,8 @@ header .nav-list.drop-down li:first-child { padding-top: 10px; }
 
 @media only screen and (max-width: 400px) {
     /* header */
-    .header .top-section { justify-content: center; }
-    .header .top-section .subscribe { display: none; }
-    .header .top-section .sign-up-button { display: none; }
+    .header .top-section { flex-direction: row-reverse; }
+    .header .top-section .rt-side { display: none; }
 
     /* section 1*/
     .blog-post-cards .long { padding: 20px }
@@ -195,15 +194,6 @@ header .nav-list.drop-down li:first-child { padding-top: 10px; }
     
 
 }
-
-
-
-
-
-
-
-
-
 
 
 /* debug styles */
